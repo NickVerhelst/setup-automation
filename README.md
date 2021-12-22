@@ -1,2 +1,2 @@
-# setup-automation
-A collection of scripts that can be used to automatically set up your personal workspace.
+# Automated setup
+The scripts in this package aim to automate the installation of software on a freshly installed computer.
