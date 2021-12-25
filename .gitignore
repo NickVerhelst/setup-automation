@@ -1,0 +1,3 @@
+# The folder containing the test packages
+# TODO: Add these files to the "config" folder in order to overwrite the example files. 
+.testdata

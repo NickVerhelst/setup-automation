@@ -1,0 +1,8 @@
+{
+	'choco': {
+		'personal': 'packages-to-install-choco.txt',
+		'corporate': 'packages-to-install-choco-corporate.txt'
+	},
+	'powershell': 'packages-to-install-windows.txt',
+	'vscode': './vscode-libraries.txt'
+}
