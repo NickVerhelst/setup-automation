@@ -29,6 +29,7 @@ Other ideas for scripts to add:
   - Start menu setup (on the left)
   - Pinned programs to the start bar?
   - Background setup (add files to this set)
+  - If the above is not easily possible, you can also automatically generate a "checklist" in on the desktop.
 - Automate VSCode package setup/installation
 - Automate Outlook settings setup
 - Automate installation of Anaconda environments (loop trough environments folder)
