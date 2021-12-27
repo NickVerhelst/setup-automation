@@ -1,6 +1,8 @@
 # Automated setup
 The scripts in this package aim to automate the installation of software on a freshly installed computer.
 
+In order to facilitate the automation capabilities, we use the chocolatey package manager.
+
 # Requirements
 In order to run the software, the following config files should be present:
 - packages-to-install-choco.txt: A list of packages that are installed via chocolatey.
