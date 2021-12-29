@@ -11,6 +11,8 @@ In order to run the software, the following config files should be present:
 
 In order to generalize the names, I am working on a general config file where you can just point to the locations.
 
+For the PowerShell scripts, note that running scripts should be enabled using the appropriate execution policy: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`.
+
 # Usage
 For a first version, the different powershell scripts should be ran in the order outlined below.
 
