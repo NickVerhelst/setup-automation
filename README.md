@@ -16,10 +16,16 @@ For the PowerShell scripts, note that running scripts might need you to enable t
 # Usage
 For a first version, the different powershell scripts should be ran in the order outlined below.
 
-1. check-config-files.ps1: Checks if the config files are in the correct output format.
+1. check-config-files.ps1: Checks if the config files are in the correct output format. (depricated at the moment)
 2. install-chocolatey.ps1: Installs the latest version of chocolatey via PowerShell (needed for next step).
-3. fresh-install.ps1: Installs packages for fresh computer install using chocolatey (via the choco command).
+3. fresh-install.ps1: Installs packages for fresh computer install using chocolatey (via the choco command). This will execute the scripts in the following order:
+   1. install-chocolately.ps1 (using the "install-choco" configs).
+   2. install-chocolatey.ps1 (using the "install-coco-corporate" configs).
 4. install-vscode-libraries.ps1: Installs the different VSCode libraries via PowerShell (requires VSCode installed via previous command).
+
+After the scripts, you will need to manually set up the WSL (windows subsystem for linux). In this linux environment, you can then run the appropriate Linux scripts to set up that environment:
+1. update-linux-distro.sh: Updates Linux to the latest version
+2. install-linux-packages.sh: Installs the different Linux packages according to the config file (to be built).
 
 
 # TODO: 
