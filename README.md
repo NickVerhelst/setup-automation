@@ -1,7 +1,7 @@
 # Automated setup
 The scripts in this package aim to automate the installation of software on a freshly installed computer.
 
-In order to facilitate the automation capabilities, we use the chocolatey package manager.
+In order to facilitate the automation capabilities, we use the chocolatey package manager. Note that alternatives exist (e.g. scoop). You are free to re-use the code here and use a different installer.
 
 # Requirements
 In order to run the software, the following config files should be present:
@@ -11,7 +11,7 @@ In order to run the software, the following config files should be present:
 
 In order to generalize the names, I am working on a general config file where you can just point to the locations.
 
-For the PowerShell scripts, note that running scripts should be enabled using the appropriate execution policy: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`.
+For the PowerShell scripts, note that running scripts might need you to enable the appropriate execution policy: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`.
 
 # Usage
 For a first version, the different powershell scripts should be ran in the order outlined below.
