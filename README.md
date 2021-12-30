@@ -25,6 +25,8 @@ For a first version, the different powershell scripts should be ran in the order
 # TODO: 
 - Combine all logic in a central `main.ps1` script that will scan the main config file and do the required appropriate actions on its own. 
 - In the centralized script, we can log the different steps and its process.
+- Add a "check configs" script to already check the script setup by default.
+- Write a "post-installation" checklist to the desktop after successful completion.
 
 Other ideas for scripts to add:
 - Automate Windows setting setup (might require automated detection of windows version)
