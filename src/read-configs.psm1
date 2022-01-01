@@ -34,7 +34,7 @@ function Read-ConfigFile{
         }
     }
     # At the end we clean up the trailing comma from the last package.
-    return $lines.Substring(0, $lines.length-2)
+    return $lines.Substring(0, $lines.length-1)
 }
 # At the end of the module we explicitly expose our function to the end users.
 Export-ModuleMember -Function Read-ConfigFile
