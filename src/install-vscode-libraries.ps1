@@ -1,5 +1,12 @@
-﻿# Via command line you can install various VSCode libraries
-# This is done using the command below:
-code --install-extension <extension_name>
-# Note that the extension_name should contain the full name!
-# The currently installed extension names can be fetched using "code --list-extensions"
+﻿# Set-ExecutionPolicy Bypass -Scope Process -Force; 
+$relativePath = '../src/read-configs.psm1'
+$modulePath = (Join-Path "$($PSScriptRoot)" "$($relativePath)")
+$librariesSeparator = ","
+Import-Module $modulePath
+$pathToConfigs = './testfiles'
+$fileName = 'test-vscode-libraries.txt'
+$librariesToInstall = (Read-ConfigFile -pathToFile "$($pathToConfigs)" -fileName "$($fileName)" -packagesSeparator "$($packagesSeparator)")
+foreach ($library in "$($librariesToInstall)".split("$($librariesSeparator)")) {
+    Write-Host "Setting up library $($package)"
+    code --install-extension $library
+}

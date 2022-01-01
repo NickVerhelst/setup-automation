@@ -1,0 +1,18 @@
+################################################################################
+# Workspace optimization
+################################################################################
+zhuangtongfa.material-theme # The One Dark Mode theme of Atom for VSCode.
+johnpapa.vscode-peacock # Allows you to color the VSCode editor based on project.
+streetsidesoftware.code-spell-checker # Add spell check for your code in VSCode.
+christian-kohler.path-intellisense # Enable automated
+CoenraadS.bracket-pair-colorizer-2 # Colors bracket pairs to easily find matching pairs.
+gruntfuggly.todo-tree # ToDo tree: scans your files for to-do items.
+wayou.vscode-todo-highlight # Highlight "TODO:", "FIXME:", ... in code.
+
+
+################################################################################
+# Git
+################################################################################
+github.vscode-pull-request-github
+
+
