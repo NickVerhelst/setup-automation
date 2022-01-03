@@ -4,13 +4,13 @@ relative_path="testfiles/test-linux-packages.txt"
 full_path="$parent_path/$relative_path"
 # Convert input text file to Unix format (needed for correct line endings)
 dos2unix $full_path
-# Create temp file
-parsed_file='$($full_path) | grep -v "^#" | grep -v "^\s*$"'
+# Create temp fil"
+# ? TODO: Find out how this can be done WITHOUT the intermediate file.
+(sed -E '/^[[:blank:]]*(#|$)/d; s/#.*//' $full_path > .parsed_input_bash.txt)
 # Convert file to remove all comments
-# $file_without_comments="$("${full_path}" | grep -v '^#' | grep -v '^\s*$' | cut -d ' ' -f1)"
-while IFS= read -r line; do
-#     $line | cut -d '#' -f1 > echo
-    echo '%s\n' "Installing $parsed_line"
-    # sudo apt-get install $line | xargs
-    # sudo apt-get install <package>
-done < "$parsed_file"
+while read line; do
+    echo "Installing $line"
+    sudo apt-get install $line | xargs
+done < .parsed_input_bash.txt
+# When done, cleanup the temp file.
+rm .parsed_input_bash.txt
