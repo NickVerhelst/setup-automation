@@ -8,7 +8,7 @@ function Install-MicrosoftStorePackages{
     )
     foreach ($package in "$($packagesToInstall)".split("$($packagesSeparator)")) {
         Write-Host "Installing $($package)"
-        winget install $package --source msstore
+        winget install $package --source "msstore" --accept-package-agreements --accept-source-agreements
     }
 }
 # At the end of the module we explicitly expose our function to the end users.
