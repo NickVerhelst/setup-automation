@@ -1,0 +1,1 @@
+winget install <package> --source "msstore" --accept-package-agreements --accept-source-agreements
