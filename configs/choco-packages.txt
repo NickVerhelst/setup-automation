@@ -1,0 +1,13 @@
+####################################################################################################
+# CHOCO PACKAGES TO INSTALL
+#---------------------------------------------------------------------------------------------------
+# A list of packages to install via Chocolatey. This file is used by the "choco-install.ps1" script.
+# The full list of available packages is found here: https://community.chocolatey.org/packages
+# Also check if additional options are required!
+####################################################################################################
+#---------------------------------------------------------------------------------------------------
+# GENERAL PACKAGES (CORE)
+#---------------------------------------------------------------------------------------------------
+adobereader # Adobe Acrobat Reader DC
+googlechrome # Google Chrome web browser
+# spotify # Music streaming platform -- commented out as this can give issues via the Microsoft Store version

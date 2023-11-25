@@ -3,16 +3,14 @@
 #>
 function Read-ConfigFile{
     param(
-        [string[]] $pathToFile = './config/',
+        [string[]] $pathToFile = './configs/',
         [string[]] $fileName,
-        [string[]] $pathToLog = './logs/',
         [string[]] $commentSymbol = '#',
-        [string[]] $packagesSeparator = ' '
+        [string[]] $packagesSeparator = ','
     )
     $today = (Get-Date -Format "yyyyMMdd")
     $logName = "$($today)$($fileName)"
     $fullPathToFile = (Join-Path "$($pathToFile)" "$($fileName)")
-    $fullPathToLog = (Join-Path "$($pathToLog)" "$($logName)")
     foreach ($line in Get-Content -Path $fullPathToFile) {
         $lineToAdd = $line
         # We remove blank lines (can be placeholders)

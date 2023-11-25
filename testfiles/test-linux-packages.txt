@@ -1,8 +1,0 @@
-################################################################################
-# General
-################################################################################
-git # Version Control System
-make # Allows working with makefiles
-
-
-build-essentials # GCC (Gnu Compiler Collection) build tools
