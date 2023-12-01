@@ -13,7 +13,7 @@ Write-Output "Found following packages to install via Chocolatey: $($chocoPackag
 Write-Output "Reading Microsoft store packages to install ..."
 $microsoftStoreFileName = 'microsoft-store-packages.txt'
 $microsoftStorePackagesToInstall = (Read-ConfigFile -fileName "$($microsoftStoreFileName)")
-Write-Output "Found following packages to install via Chocolatey: $($microsoftStorePackagesToInstall)"
+Write-Output "Found following packages to install via Microsoft Store: $($microsoftStorePackagesToInstall)"
 # Next we install all the packages
 Write-Output "Installing Chocolatey packages ..."
 Install-ChocoPackages -packagesToInstall "$($chocoPackagesToInstall)"
