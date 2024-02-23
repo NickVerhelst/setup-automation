@@ -20,8 +20,8 @@ To run the script, you simply update the files in the configs and run the main.p
 
 The config files are just a flat listing of the packages by name or ID as they can be found in:
 
-- Chocolatey (alias 'choco')
-- The Microsoft Store
+- Chocolatey (alias `choco`)
+- The Microsoft Store (via alias `winget`)
 
 Packages outside of these providers are not in scope of this script.
 
