@@ -1,5 +1,5 @@
 <# READ CONFIGS
-    This module file will run the installer for the choco packages.
+    This module file will run the installer for the Microsft Store packages.
 #>
 function Install-MicrosoftStorePackages{
     param(
