@@ -37,15 +37,7 @@ If you include packages, it is your personal responsibility to check whether you
 
 You can easily retry an install manually by updating the config files to contain the packages you want to retry. When re-running the `main.ps1` file the packages are retried for install.
 
-## A possible Chocolatey issue
-
-Chocolatey is open-source and maintained by its users. This means that it can occur that packages are in need of an active maintainer and can start to lag behind. This is especially true for older operating systems (e.g. Windows 10 can already sometimes lag behind).
-
-A typical error that occurs is that hashes will no longer match: A newer version is released but the maintainer forgot to update the hash.
-
-To fix this issue you can re-run the choco command manually by adding the `--ignorechecksum` flag. This is not done by default as the checksum holds great security benefits.
-
-> I would not encourage this fix on the first try. Please perform several retries before resorting to this tactic.
+> Note: You can always keep the old list of packages. Chocolatey will automatically skip packages that are already installed.
 
 ## Compatibility
 
